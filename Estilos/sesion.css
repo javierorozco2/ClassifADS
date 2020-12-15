@@ -1,0 +1,142 @@
+body {
+    font-family: 'Open Sans';
+    margin: 0;
+    background: url(imagen.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+* {
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 100%;
+    padding: 50px;
+}
+.formulario{
+    background: #fff;
+    margin-top: 10px;
+    padding: 3px;
+}
+h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+
+input[type="text"],
+input[type="password"], 
+select,
+input[type="tel"],
+input[type="email"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background:  #56A10C;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background: #66FF99;
+}
+p{
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+      color: #56A10C;
+    font-weight: 600;
+}
+.link:hover{
+     color: #66FF99;
+}
+@media(min-width:768px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 10px;
+        border-radius: 2%;
+    }
+}
+
+.barbutton{
+    float: left;
+    border-radius: 0px;
+    background-color: #66FF99;
+    border: 0px;
+    width: 140px;
+    height: 40px;
+    margin-top: 18px;
+    font-size: 18px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+}
+
+#btn1{
+    margin-left: 700px;
+}
+#btn2{
+    margin-left: 30px;
+}
+
+#logo{
+    float: left;
+    margin-top: -15px;
+    margin-left: 50px;
+    width: 200px;
+    height: 100px;
+}
+
+
+/*-----------------Resultado de registro--------------*/
+
+#reg-confirm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgb(131, 243, 87);
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+    padding: 1em 0;
+}
+#reg-noconfirm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgb(243, 87, 87);
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+    padding: 1em 0;
+}
+
+
+
+

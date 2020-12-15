@@ -1,0 +1,228 @@
+*{
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pubsec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TITULO DE LA VENTANA */
+#pubsec__titulo{
+    margin-top: 50px;
+}
+
+#pubsec__linea{
+    width: 30vw;
+}
+/* -------------------- */
+
+#pubsec form{
+    padding: 40px 70px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 150px 0;
+    width: 70vw;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.247);
+    border-radius: 15px;
+    min-height: 700px;
+}
+
+#pubsec input[type='file']{
+    display: none;
+}
+
+#pubsec__form-masimg{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 5px;
+    margin-left: 20px;
+    text-align: center;
+    font-weight: bolder;
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(51, 69, 75);
+    /* background: #333; */
+    z-index: 50;
+    transition: background-color 0.2s;
+}
+
+.pubsec__form-imagen{
+    width: 150px;
+    border-radius: 5px;
+    height: 150px;
+    margin: 0 10px;
+    border: 1px solid rgb(151, 151, 151);
+    cursor: pointer;
+    overflow: hidden;
+}
+.pubsec__form-imagen img{
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+}
+
+#pubsec__form-masimg:hover{
+    background-color: rgb(77, 116, 128);
+}
+#pubsec__form-masimg p{
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed rgba(0, 0, 0, 0.1);
+    position: absolute;
+    border-radius: 50%;
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 16pt;
+    z-index: -1;
+}
+
+#pubsec__form-imagenes{
+    overflow-x: scroll;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    border-radius: 5px;
+}
+
+.pubsec__form-div{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pubsec__form-div label{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.767);
+}
+
+.pubsec__input{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    padding: 14px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.pubsec__input-select{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    padding: 0px 14px;
+    height: 40px;
+    font-size: 16px;
+}
+.pubsec__form-div textarea{
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 14px;
+    height: 200px;
+    resize: vertical;
+}
+
+#pubsec__form-submit{
+    margin: 40px auto;
+    width: 30vw;
+    border: none;
+    background-color: rgb(116, 216, 255);
+    height: 50px;
+    color: rgb(34, 34, 34);
+    font-weight: bolder;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+#pubsec__form-submit:hover{
+    background-color: rgb(39, 77, 92);
+}
+
+/* ESTILOS DE CONFIRMAR PUBLICACION */
+
+#reg-confirm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 16px;
+    background-color: rgb(131, 243, 87);
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+    padding: 1em 0;
+}
+#reg-noconfirm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 16px;
+    background-color: rgb(131, 243, 87);
+    background-color: rgb(243, 87, 87);
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+    padding: 1em 0;
+}
+
+
+/* CARACTERISTICAS */
+.pubsec__form-div-carac{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pubsec__input-carac{
+    margin-bottom: 10px;
+    width: 49%;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    padding: 14px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.pubsec__form-div-carac label{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.767);
+    width: 100%;
+}
+
+span{
+    color: #aaa;
+    margin: 0 auto;
+    width: 40px;
+    border: none;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: #fff;
+    cursor: pointer;
+}

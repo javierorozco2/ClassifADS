@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="sources/icon.png" />
+    <link rel="stylesheet" href="Estilos/mensajes.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <title>ClassifADS - Mensajes</title>
+    
+</head>
+<body>
+    <?php require 'pedazos/headerprueba.php'?>
+
+    <!-- <h1>Mensajes</h1> -->
+
+    <div id="msgcontainer">
+
+        <!-- Barra de navegacion -->
+        <div id="msgcontainer__nav">
+            <!-- <div id="msgcontainer__nav-msg">
+                <img src="https://i.blogs.es/594843/chrome/450_1000.jpg" class="msgimg">
+                <p class="msgnombre">Julanito</p>
+            </div> -->
+        </div>
+
+        <!-- Mensajes como tal -->
+        <div id="msgcontainer__section">
+            <p style="text-align: center; padding-top: 10vh; color:#aaa;">Selecciona un mensaje</p>
+            <!-- <div class="mensajeizq">hola<span class="msghora">07:20pm</span></div> -->
+            <!-- <div class="mensajeder">hola q tal<span class="msghora">07:20pm</span></div>     -->
+        </div>
+
+        <!-- Ingresar y enviar mensajes -->
+        <form id='form-msg'>
+
+        </form>
+
+        <div id="msgcontainer__input">
+            <input form="form-msg" type="text" id="mensajexenviar" placeholder="Ingresa un mensaje...">
+            <button form="form-msg"  id="btnenviar" type="submit" ><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <?php require 'pedazos/footer.php'?>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="script/msg.js"></script>
+</body>
+</html>

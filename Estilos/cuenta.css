@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    box-sizing: content-box;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+}
+
+#main-div__anuncios {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+#perfil{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    flex: none;
+    width: 97vw;
+}
+
+#perfil #portada{
+    position: absolute;
+    width: 100%;
+    top: -450px;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 729px;
+}
+        
+#perfil #name{
+    font-size: 16pt;
+    font-weight: bolder;
+}
+
+#perfil p{
+    margin-top: 10px;
+}
+
+#perfil #img-perfil{
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.247);
+    margin-top: 50px; 
+}
+
+.head-divboton{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    overflow: hidden;
+    margin-left: 1.60vw; 
+    transition: 0.5s;
+    box-shadow: 0px 0px 0px 0px black;
+    /* transition-delay: 0.2s; */
+}
+
+.head-divboton:hover{
+    border-radius: 4px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px -1px black;
+}
+
+.head-divboton a{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+/* LINEA ABAJO */
+.head-divboton .head-span1{
+    background: linear-gradient(90deg, rgba(106,98,255,1) 0%, rgba(0,136,163,1) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+}
+/* LINEA IZQ */
+.head-divboton .head-span2{
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(90deg, rgba(106,98,255,1) 0%, rgba(0,136,163,1) 100%);
+    top: 100%;
+    left: 0%;
+    transition: 0.2s;
+}
+
+.head-divboton:hover .head-span2{
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(90deg, rgba(106,98,255,1) 0%, rgba(0,136,163,1) 100%);
+    top: 0%;
+    left: 0%;
+}
+/* LINEA DERECHA */
+.head-divboton .head-span3{
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(90deg, rgba(106,98,255,1) 0%, rgba(0,136,163,1) 100%);
+    top: 100%;
+    right: 0%;
+    transition: 0.2s;
+}
+.head-divboton:hover .head-span3{
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(90deg, rgba(106,98,255,1) 0%, rgba(0,136,163,1) 100%);
+    top: 0;
+    right: 0%;
+}
+
+/* ARRIBA DOS LINEAS */
+/* IZQ */
+
+.head-divboton .head-span4{
+    background: linear-gradient(90deg, rgba(106,98,255,1) 0%, rgba(0,136,163,1) 100%);
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 0;
+    left: -100%;
+    transition: 0.2s;
+    /* transition-delay: 0.2s; */
+}
+.head-divboton:hover .head-span4{
+    background: linear-gradient(90deg, rgba(106,98,255,1) 0%, rgba(0,136,163,1) 100%);
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 0;
+    left: 0%;
+}
+/* DERECHA */
+.head-divboton .head-span5{
+    background: linear-gradient(90deg, rgba(106,98,255,1) 0%, rgba(0,136,163,1) 100%);
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 0;
+    left: 100%;
+    transition: 0.2s;
+    /* transition-delay: 0.2s; */
+}
+
+.head-divboton:hover .head-span5{
+    background: linear-gradient(90deg, rgba(106,98,255,1) 0%, rgba(0,136,163,1) 100%);
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 0;
+    left: 0%;
+}
+
+.main-div{
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.247);
+    border-radius: 5px; 
+    flex: 1;
+    width: 50%;
+    margin: 10px;
+    padding: 30px;
+}
+
+.adminsection_valanun-anun{
+    box-sizing: content-box;
+    background-color: rgba(180, 180, 180, 0.466);
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    border-radius: 6px;
+    margin: 5px 0;
+    width: 100%;
+    min-height: 70px;
+    padding: 10px;
+}
+.adminsection_valanun-anun img{
+    width: 80px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.adminsection_valanun-anun p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.158);
+    height: 100%;
+    border-radius: 5px;
+    margin: 0.5vw;
+    color: rgb(65, 65, 65);
+    font-size: 14px;
+    text-align: justify;
+    font-weight: bolder;
+    padding: 0 10px;
+    width: 60%;
+}
+
+.adminsection_valanun-anun button{
+    color: white;
+    border: none;
+    height: 40px;
+    margin-left: 2vw;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.adminsection_valanun-anun a:nth-child(3) button:nth-child(1){
+    background: rgb(219, 88, 70);
+    transition: background 0.3s;
+
+}
+.adminsection_valanun-anun a:nth-child(3) button:nth-child(1):hover{
+    background: rgb(148, 59, 47);
+}
+
+.adminsection_valanun-anun a:nth-child(4) button:nth-child(1){
+    background: rgb(0, 140, 255);
+    transition: background 0.3s;
+
+}
+.adminsection_valanun-anun a:nth-child(4) button:nth-child(1):hover{
+    background: rgb(0, 65, 117);
+}
+
+

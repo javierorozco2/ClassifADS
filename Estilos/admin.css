@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+}
+
+#adminsection{
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    margin: 30px auto;
+}
+
+.adminsection__div{
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.247);
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* .adminsection__div h2{
+    width: 100%;
+    text-align: center;
+} */
+
+/* Validacion de anuncios */
+#adminsection__valanun{
+    flex: 1;
+    display: flex;
+    margin-right: 2vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.adminsection_valanun-anun{
+    box-sizing: content-box;
+    background-color: rgba(180, 180, 180, 0.466);
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    border-radius: 6px;
+    margin: 5px 0;
+    width: 90%;
+    min-height: 70px;
+    padding: 10px;
+}
+.adminsection_valanun-anun img{
+    width: 80px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.adminsection_valanun-anun p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.158);
+    height: 100%;
+    border-radius: 5px;
+    margin: 0.5vw;
+    color: rgb(65, 65, 65);
+    font-size: 14px;
+    text-align: justify;
+    font-weight: bolder;
+    padding: 0 10px;
+    width: 60%;
+}
+
+.adminsection_valanun-anun button{
+    color: white;
+    border: none;
+    height: 40px;
+    margin-left: 0.4vw;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.adminsection_valanun-anun a:nth-child(3) button:nth-child(1){
+    background: rgb(59, 216, 119);
+    transition: background 0.3s;
+}
+.adminsection_valanun-anun a:nth-child(3) button:nth-child(1):hover{
+    background: rgb(40, 155, 82);
+}
+
+.adminsection_valanun-anun a:nth-child(4) button:nth-child(1){
+    background: rgb(219, 88, 70);
+    transition: background 0.3s;
+
+}
+.adminsection_valanun-anun a:nth-child(4) button:nth-child(1):hover{
+    background: rgb(148, 59, 47);
+}
+
+.adminsection_valanun-anun a:nth-child(5) button:nth-child(1){
+    background: rgb(0, 140, 255);
+    transition: background 0.3s;
+
+}
+.adminsection_valanun-anun a:nth-child(5) button:nth-child(1):hover{
+    background: rgb(0, 65, 117);
+}
+
+/* ----------------------- */
+/* ----ADMINISTRAR USUARIOS------- */
+
+#adminsection__adminuser{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.adminsection_adminuser-user{
+    box-sizing: content-box;
+    background-color: rgba(180, 180, 180, 0.466);
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    border-radius: 6px;
+    margin: 5px 0;
+    width: 90%;
+    min-height: 70px;
+    padding: 10px;
+}
+
+.adminsection_adminuser-user p{
+    text-align: center;
+    flex: 1;
+    font-weight: bolder;
+    color: rgb(20, 51, 51);
+}
+.adminsection_adminuser-user p i{
+    margin-right: 5px;
+}
+
+.adminsection_adminuser-user button{
+    color: white;
+    border: none;
+    height: 40px;
+    margin-left: 0.4vw;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.adminsection_adminuser-user a:nth-child(5) button:nth-child(1){
+    background: rgb(219, 88, 70);
+    margin-right: 8px;
+    transition: background 0.3s;
+}
+.adminsection_adminuser-user a:nth-child(5) button:nth-child(1):hover{
+    background: rgb(148, 59, 47);
+}
+
+.adminsection_adminuser-user button:nth-child(4){
+    background: rgb(219, 197, 70);
+    transition: background 0.3s;
+}
+.adminsection_adminuser-user button:nth-child(4):hover{
+    background: rgb(126, 113, 40);
+}
+/* ----------------------- */
+/*----Registrar validador---- */
+#adminsection__validador{
+    flex: none;
+    width: 90vw;
+    text-align: center;
+}
+
+#adminsection__validador form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 3vw;
+}
+
+#adminsection__validador form div{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.479);
+    /* flex: 1; */
+    width: 18vw;
+    margin: 30px 0;
+}
+
+#adminsection__validador form div input[type="text"],
+#adminsection__validador form div input[type="password"],
+#adminsection__validador form div input[type="email"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+#adminsection__validador form input[type="submit"]{
+    width: 150px;
+    margin: 10px auto 30px auto;
+    border: none;
+    background-color: rgb(116, 216, 255);
+    height: 40px;
+    color: rgb(34, 34, 34);
+    font-weight: bolder;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+#adminsection__validador form input[type="submit"]:hover{
+    background-color: rgb(39, 77, 92);
+}
+
+/*-------- paginacion----- */
+#adminsection__paginacion{
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+}
+#adminsection__paginacion li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    /* box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.884); */
+    margin: 0 2px;
+    min-width: 30px;
+    height: 30px;
+    padding: 0 4px;
+    border-radius: 3px;
+}
+#adminsection__paginacion li:hover{
+    background: #aaa;
+}
+#adminsection__paginacion li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.719);
+    font-weight: bolder;
+}
+
+#adminsection__paginacion #paginacion__seleccionada{
+    background: #428bca;
+    color: rgba(0, 0, 0, 0.719);
+    font-weight: bolder;
+}
+#adminsection__paginacion #paginacion__seleccionada:hover{
+    background: #214768;
+}
+
+/* ERRORES */
+#adminsection__reg-noconfirm{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: red;
+}
+#adminsection__reg-confirm{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: rgb(0, 255, 106);
+}
+
+@media (max-width: 800px){
+    #adminsection{
+        /* background-color: blue; */
+        flex-direction: column;
+    }
+    #adminsection__valanun{
+        margin: 0;
+    }
+    #adminsection__validador form{
+        flex-direction: column;
+    }
+    #adminsection__validador form div{
+        width: 80%;
+    }
+}
+

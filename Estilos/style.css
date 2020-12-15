@@ -1,0 +1,331 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /* font-family: Product, Simple; */
+    font-family: 'Open Sans';
+    text-decoration: none;
+}
+
+#section__adminBoton-a{
+    box-sizing: content-box;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background: #49b6d6;
+    height: 40px;
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin: 20px auto;
+    font-weight: bolder;
+    transition: background 0.5s;
+    border: 3px solid #37788b;
+}
+
+#section__adminBoton-a:hover{
+    background: #37788b;
+}
+
+#section__adminBoton-a i{
+    margin-right: 8px;
+}
+
+/* BARRA QUE SE DESLIZA */
+.slider{
+    width: 100%;
+    margin: auto;
+    margin-top: 35px;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0px;
+    width: 200%;
+
+    animation: cambio 10s infinite alternate;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% { margin-left: 0%;}
+    10% {margin-left: 0%;}
+
+    50% {margin-left: -100%;}
+    100% {margin-left: -100%;}
+}
+
+/* TABLA CON CATEGORIAS */
+
+#section__cat{
+    padding: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95vw;
+    border-radius: 15px;
+    box-shadow: 0 0 7px -3px black;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+#section__cat a{
+    font-weight: bolder;
+    margin: 5px 10px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+    text-align: center;
+    flex-direction: column;
+}
+
+#section__cat a img{
+    margin-bottom: 10px;
+    width: 70px;
+    filter: drop-shadow(0px 0px 0px rgb(161, 161, 161));
+    transition: filter 0.5s;
+}
+
+#section__cat a:hover img{
+    filter: drop-shadow(0px 0px 3px rgb(53, 27, 145));
+}
+
+/* LISTAS DE PRODUCTOS */
+#section__productos-titulo{
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 35px;
+    margin-bottom: 20px;
+}
+
+#section__productos{
+    display: flex;
+    width: 95vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* background-color: brown; */
+}
+
+.section__productos-cuadro{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    width: 20vw;
+    min-width: 300px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.247);
+    min-height: 340px;
+    transition: box-shadow 0.5s;
+}
+
+.section__productos-cuadro:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.section__productos-cuadro img{
+    object-fit: cover;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.section__productos-cuadro p{
+    color: black;
+    padding: 0 10px;
+}
+
+.section__productos-cuadro p:nth-child(2){
+    font-weight: bolder;
+    display: inline;
+    padding: 5px 10px;
+}
+
+.section__productos-cuadro p:nth-child(3){
+    position: absolute;
+    background: rgb(0, 71, 138);
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    border-radius: 3px;
+    top: 89%;
+    left: 70%;
+    font-size: 14px;
+}
+
+.section__productos-cuadro p:nth-child(4){
+    padding: 5px 10px 20px 10px;
+    color: rgb(109, 109, 109);
+    font-weight: bolder;
+}
+
+#section__vermas{
+    background-color: white;
+    border: none;
+    display: block;
+    margin: 10px auto 80px auto;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    transition: font-size 0.2s;
+}
+
+#section__vermas:hover{
+    font-size: 35px;
+}
+
+
+/* ------------OTRA VENTANA: Informacion de anuncio------------- */
+
+/* BANNER */
+.swiper-container {
+    /*background-color: #7F7F7F;*/
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+/* Titulo */
+#titanuncio{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+}
+#titanuncio hr{
+    width: 50%;
+    background-color: black;
+    margin-left: auto;
+    height: 1px;
+    margin-right: auto;
+}
+#titanuncio p:nth-child(2){
+    font-size: 30px;
+}
+#titanuncio p:nth-child(4){
+    font-family: Simple;
+}
+
+/* SECTION contenido */
+
+#main{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0px;
+    width: 50%;
+}
+
+#Descripcion{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#Precio{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#Info{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.main-div{
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.247);
+    border-radius: 5px; 
+    flex: 1;
+    width: 50%;
+    margin: 10px;
+    padding: 30px;
+    flex-direction: row;
+}
+
+#Mensaje{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* BORRAR  */
+#alert-sitrash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgb(131, 243, 87);
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+    padding: 1em 0;
+    font-weight: bolder;
+}
+
+#alert-notrash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgb(243, 87, 87);
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+    padding: 1em 0;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

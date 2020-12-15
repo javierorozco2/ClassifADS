@@ -1,0 +1,36 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+#fondo{
+    font-size: 16pt;
+    display: inline-block;
+    width: 100%;
+    height: 170px;
+    background:   linear-gradient(to right, rgba(76,255,195,1) 0%, rgba(169,245,149,1) 52%, rgba(255,235,107,1) 100%);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+}
+#fottextright{
+    text-align: end;
+}
+
+#im{
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+#im2{
+    margin-right: 30px;
+    margin-bottom: 25px;
+    
+}
+
+.fottext{
+    padding: 1em;
+}
+
+
